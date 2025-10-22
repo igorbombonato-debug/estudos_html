@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+
 <body>
     <h1>Página de Estudos</h1>
+    <form method="get" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <input type="e-mail" name="email" placeholder="digite seu e-mail">
+        <input type="submit" name="enviar" placeholder="enviar">
+    </form>
+    <form>
+        <input type="button" value="clique aqui" onclick="msg()">
+    </form>
+    <form>
+        <input type="checkbox" name="veiculo1" value="bicicleta">
+        Eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="carro">
+        Eu tenho um carro<br>
+        <input type="checkbox" name="veiculo3" value="moto">
+        Eu tenho uma moto<br>
+    </form>
+
+    <form>
+        selecione sua cor favorita:<input type="color" name="favcor" value="#0000FF">
+    </form>
+
+    <form> Data de nascimento: <input type="date" name="nascimento">
+    </form>
+
+    <form>
+        Data de nascimento: <input type="datetime-local" name="bdaytime">
+    </form>
+
+    <form>
+        <input type="file" name="arquivo">
+    </form>
+    <br><br><br>
+    <form>
+        <input type="file" name="arquivos" multiple>
+    </form>
+
+    <form>
+        quantidade(entre 1 e 5):<input type="number" name="qtd" min="1" max="5">
+    </form>
+
+    <from>
+        <input type="password" name="senha" placeholder="digite sua senha">
+        </form>
+
+        <form>
+            <p>Qual sua idade?</p>
+            <input type="radio" name="idade" value="18_22">18 a 22<br>
+            <input type="radio" name="idade" value="23_30">23 a 30<br>
+            <input type="radio" name="idade" value="mais31">acima de 31<br>
+        </form>
+
+        <form>
+            defina seu nivel de satisfação:<br>
+            pouco satisfeito😢😢
+            <input type="range" name="satisfacao" min="0" max="10">
+            muito satisfeito😀😀
+        </form>
+        <form>
+            <label for="email">Digite seu e-mail</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="pin">digite seu código</label>
+            <input type="text" id="pin" name="pin" maxlength="4"><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="submit">
+        </form>
+        <form>
+            pesquisar:<input type="search" name="q">
+        </form>
+        <form>
+            <input type="submit" value="Enviar Formulario">
+        </form>
+
+        <form>
+            telefone: <input type="tel" name="usetel">
+        </form>
+
+        <form>
+            link do seu website: <input type="url" name="webpage">
+        </form>
+
+        <form>
+            <textarea></textarea>
+            <br>
+            <textarea> Área de texto com um texto inicial dentro</textarea>
+        </form>
+
+        <select name="lista" id="lista">
+            <option> selecione uma opção</option>
+            <option> frango</option>
+            <option> carne</option>
+            <option> peixe</option>
+            <option>vegano</option>
+        </select>
+
+        <fieldset>
+            <legend>Formulario</legend>
+        </fieldset>
+
+        <script>
+            function msg() {
+                alert("você clicou no botão!")
+            }
+        </script>
 </body>
+
 </html>
