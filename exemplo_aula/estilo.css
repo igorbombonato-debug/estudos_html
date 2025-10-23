@@ -1,0 +1,15 @@
+h1 {
+    background-color: rgb(255, 174, 0);
+}
+
+h2 {
+    background-color: rgb(255, 64, 0);
+}
+
+body {
+    background-image: url(https://sp.senai.br/images/senai.svg);
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
